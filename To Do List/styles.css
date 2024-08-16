@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+header.dark-theme {
+    background: linear-gradient(135deg, #1B5E20, #0D3A14);
+}
+
+header h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+}
+
+#theme-toggle {
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+input[type="text"], select {
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"].dark-theme, select.dark-theme {
+    border: 2px solid #555;
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="submit"] {
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+ul.list-group {
+    margin-top: 20px;
+}
+
+ul.list-group li {
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+ul.list-group li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+ul.list-group li.completed.dark-theme {
+    background-color: #2e7d32;
+}
+
+.btn {
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+}
+
+#lblsuccess {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-options button {
+    margin-right: 10px;
+}
+
+body.dark-theme .filter-options button {
+    background-color: #555;
+    color: #fff;
+}
+
+.filter-options button:last-child {
+    margin-right: 0;
+}
